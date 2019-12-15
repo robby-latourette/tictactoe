@@ -1,0 +1,66 @@
+
+h1, h3 
+{
+    text-align: center;
+    font-family: monospace;
+}
+
+body
+{
+	background: url(images/background-image.jpeg);
+}
+
+.game 
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0;
+    position: absolute;
+    left: 41%;
+    top: 25%;
+}
+
+.box
+{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    cursor: pointer;
+    padding: 5px;
+    
+    font-family: monospace;
+    font-size: 90px;
+    text-align: center;
+
+}
+
+.restart 
+{
+    margin: auto;
+    font-size: 20px;
+    padding: 7px;
+    position: fixed;
+    top: 75%;
+    left: 48%;
+}
+
+
+#b00, #b01, #b02 
+{
+    border-top: none;
+}
+
+#b00, #b10, #b20 
+{
+    border-left: none;
+}
+
+#b02, #b12, #b22
+{
+    border-right: none;
+}
+
+#b20, #b21, #b22 
+{
+    border-bottom: none;
+}
